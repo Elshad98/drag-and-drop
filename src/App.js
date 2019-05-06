@@ -2,6 +2,8 @@ import React from 'react';
 import initialData from './components/initial-data';
 import Column from './components/Column';
 
+import '@atlaskit/css-reset';
+
 class App extends React.Component{
 	constructor(props){
 		super(props);
