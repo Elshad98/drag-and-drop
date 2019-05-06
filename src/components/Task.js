@@ -1,9 +1,18 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const Container = styled.div`
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 8px;
+`;
 
 class Task extends React.Component {
     render() {
+        console.log(this.props.task);
         return (
-            <div></div>    
+            <Container>{this.props.task.content}</Container>
         );
     }
 }

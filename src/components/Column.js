@@ -19,7 +19,9 @@ class Column extends React.Component {
         return (
             <Container>
                 <Title>{this.props.column.title}</Title>
-                <TaskList>{this.props.tasks.map((task) => <Task key={task.id} task={task} />)}</TaskList>
+                <TaskList>
+                    {this.props.tasks.map((task) => <Task key={task.id} task={task} />)}
+                </TaskList>
             </Container>    
         );
     }
