@@ -1,5 +1,5 @@
 import React from 'react';
-import initialData from './initial-data';
+import initialData from './components/initial-data';
 
 class App extends React.Component{
 	constructor(props){
