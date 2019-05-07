@@ -11,14 +11,6 @@ const Container = styled.div`
     display: flex;
 `;
 
-const Handle = styled.div`
-    width: 20px;
-    height: 20px;
-    border-radius: 5px;
-    background-color: orange;
-    margin-right: 8px;
-`;
-
 class Task extends React.Component {
     render() {
         return (
@@ -26,10 +18,10 @@ class Task extends React.Component {
                 {(provided, snapshot) => (
                     <Container
                         {...provided.draggableProps}
+                        {...provided.dragHandleProps}
                         ref={provided.innerRef}
                         isDragging={snapshot.isDragging}
                     >
-                        <Handle {...provided.dragHandleProps} />
                         {this.props.task.content}
                     </Container>
                 )}
