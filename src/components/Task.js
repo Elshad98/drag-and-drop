@@ -10,7 +10,6 @@ const Container = styled.div`
 
 class Task extends React.Component {
     render() {
-        console.log(this.props.task);
         return (
             <Container>{this.props.task.content}</Container>
         );
