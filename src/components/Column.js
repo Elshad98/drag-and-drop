@@ -9,7 +9,7 @@ const Container = styled.div`
     border-radius: 5px;
     background-color: #eee;
     overflow: hidden;
-    width: 280px;
+    width: 270px;
     display: flex;
     flex-direction: column;
 `;
@@ -19,7 +19,7 @@ const Title = styled.h3`
 const TaskList = styled.div`
     padding: 8px;
     transition: background-color 0.2s;
-    background-color: ${(props) => (props.isDraggingOver ? 'lightgrey' : 'inherit')};
+    background-color: ${(props) => (props.isDraggingOver ? '#ffebe6' : 'inherit')};
     flex-grow: 1;
     min-height: 100px;
 `;
@@ -58,7 +58,7 @@ class Column extends React.Component {
                                     {...provided.droppableProps}
                                     isDraggingOver={snapshot.isDraggingOver}
                                 >
-                                    <InnerList tasks={this.props.tasks} />
+                                    <InnerList tasks={this.props.tasks}/>
                                     {provided.placeholder}
                                 </TaskList>
                             )}

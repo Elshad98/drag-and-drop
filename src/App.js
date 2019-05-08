@@ -4,6 +4,7 @@ import { DragDropContext, Droppable } from 'react-beautiful-dnd';
 import Column from './components/Column';
 import styled from 'styled-components';
 import '@atlaskit/css-reset';
+import './index.css';
 
 const Container = styled.div`
     display: flex;
