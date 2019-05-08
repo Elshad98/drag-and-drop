@@ -24,27 +24,7 @@ class App extends React.Component{
 		this.state = initialData;
     }
 
-    onDragStart = (start, provided) => {
-        provided.announce(`You have lifted the task in position ${start.source.index + 1}`);
-    }
-
-    onDragUpdate = (update, provided) => {
-        const message = update.destination
-            ? `You have moved the task to position ${update.destination.index + 1}`
-            : `You are currently not over a droppable area`;
-
-        provided.announce(message);
-    }
-
-    onDragEnd = (result, provided) => {
-        const message = result.destination
-            ? `You have moved the task from position
-               ${result.source.index + 1} to ${result.destination.index + 1}`
-            : `The task has been returned to it is starting position of
-               ${result.source.index + 1}`;
-
-        provided.announce(message);
-
+    onDragEnd = (result) => {
         const { destination, source, draggableId, type } = result;
 
         if (!destination) {
@@ -124,7 +104,7 @@ class App extends React.Component{
 
     render() {
         return (
-            <DragDropContext onDragStart={this.onDragStart} onDragUpdate={this.onDragUpdate} onDragEnd={this.onDragEnd}>
+            <DragDropContext onDragEnd={this.onDragEnd}>
                 <Droppable
                     droppableId="all-columns"
                     direction="horizontal"

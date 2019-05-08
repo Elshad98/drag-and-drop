@@ -21,7 +21,6 @@ class Task extends React.Component {
                         {...provided.dragHandleProps}
                         ref={provided.innerRef}
                         isDragging={snapshot.isDragging}
-                        aria-roledescription="Press space to lift the task"
                     >
                         {this.props.task.content}
                     </Container>
