@@ -5,10 +5,11 @@ import Task from './Task';
 
 const Container = styled.div`
     margin: 8px;
-    border: 1px solid lightgrey;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.2);
     border-radius: 5px;
-    background-color: #fff;
-    width: 220px;
+    background-color: #eee;
+    overflow: hidden;
+    width: 280px;
     display: flex;
     flex-direction: column;
 `;
