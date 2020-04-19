@@ -10,6 +10,10 @@ First clone this repository.
 ```
 $ git clone https://github.com/elshad98/drag-and-drop.git
 ```  
+Then go to the folder
+```
+$ cd drag-and-drop
+```
 Install dependencies. Make sure you already have nodejs & npm installed in your system.  
 ```
 $ npm install
