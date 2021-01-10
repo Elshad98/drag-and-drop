@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/drag-and-drop/static/css/main.41f3f4e8.chunk.css",
+    "main.js": "/drag-and-drop/static/js/main.8fa72189.chunk.js",
+    "main.js.map": "/drag-and-drop/static/js/main.8fa72189.chunk.js.map",
+    "runtime~main.js": "/drag-and-drop/static/js/runtime~main.05b4015d.js",
+    "runtime~main.js.map": "/drag-and-drop/static/js/runtime~main.05b4015d.js.map",
+    "static/css/2.f366d23a.chunk.css": "/drag-and-drop/static/css/2.f366d23a.chunk.css",
+    "static/js/2.d62d4a47.chunk.js": "/drag-and-drop/static/js/2.d62d4a47.chunk.js",
+    "static/js/2.d62d4a47.chunk.js.map": "/drag-and-drop/static/js/2.d62d4a47.chunk.js.map",
+    "index.html": "/drag-and-drop/index.html",
+    "precache-manifest.7b29afdd7a72368d39f7faaf95e6946d.js": "/drag-and-drop/precache-manifest.7b29afdd7a72368d39f7faaf95e6946d.js",
+    "service-worker.js": "/drag-and-drop/service-worker.js",
+    "static/css/2.f366d23a.chunk.css.map": "/drag-and-drop/static/css/2.f366d23a.chunk.css.map",
+    "static/css/main.41f3f4e8.chunk.css.map": "/drag-and-drop/static/css/main.41f3f4e8.chunk.css.map",
+    "static/media/princess.png": "/drag-and-drop/static/media/princess.34218e29.png"
+  }
+}
