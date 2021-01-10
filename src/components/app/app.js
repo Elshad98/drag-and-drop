@@ -1,10 +1,12 @@
 import React from 'react';
-import initialData from './components/initial-data';
-import { DragDropContext, Droppable } from 'react-beautiful-dnd';
-import Column from './components/Column';
 import styled from 'styled-components';
+import { DragDropContext, Droppable } from 'react-beautiful-dnd';
+
+import initialData from '../initial-data';
+import Column from '../column';
+
 import '@atlaskit/css-reset';
-import './index.css';
+import './app.css';
 
 const Container = styled.div`
     display: flex;
@@ -18,11 +20,11 @@ class InnerList extends React.PureComponent {
     }
 }
 
-class App extends React.Component{
-	constructor(props){
-		super(props);
+class App extends React.Component {
+    constructor(props) {
+        super(props);
 
-		this.state = initialData;
+        this.state = initialData;
     }
 
     onDragEnd = (result) => {
@@ -77,7 +79,9 @@ class App extends React.Component{
             return;
         }
 
-        // Moving from one list to another
+        /**
+         * Moving from one list to another
+         */
         const startTaskIds = Array.from(start.taskIds);
         startTaskIds.splice(source.index, 1);
         const newStart = {
@@ -107,15 +111,13 @@ class App extends React.Component{
         return (
             <DragDropContext onDragEnd={this.onDragEnd}>
                 <Droppable
-                    droppableId="all-columns"
-                    direction="horizontal"
-                    type="column"
-                >
+                    droppableId='all-columns'
+                    direction='horizontal'
+                    type='column'>
                     {(provided) => (
                         <Container
                             {...provided.droppableProps}
-                            ref={provided.innerRef}
-                        >
+                            ref={provided.innerRef}>
                             {this.state.columnOrder.map((columnId, index) => {
                                 const column = this.state.columns[columnId];
                                 return (
@@ -132,7 +134,7 @@ class App extends React.Component{
                 </Droppable>
             </DragDropContext>
         );
-	}
+    }
 }
 
 export default App;
